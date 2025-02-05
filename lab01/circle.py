@@ -18,4 +18,4 @@ perimeter = 2 * math.pi * radius
 rounded_area = round(area, 2)
 rounded_perimeter = round(perimeter, 2)
 
-print(f"The area of a circle with a radius of {radius} your circle is {rounded_area} and the perimeter is {rounded_perimeter}.")
+print(f"The area of a circle with a radius of {radius} is {rounded_area} and the perimeter is {rounded_perimeter}.")
