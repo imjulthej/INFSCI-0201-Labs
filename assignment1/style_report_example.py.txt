@@ -1,0 +1,79 @@
+=== File Structure ===
+Total lines of code: 154
+Imported packages: 
+Classes: Item, Weapon, SingleHandedWeapon, DoubleHandedWeapon, Pike, RangedWeapon, Shield, Potion, Inventory
+Functions: Inventory___init__, Inventory_pick_up, Inventory_throw_away, Inventory_use, Inventory___str__, Inventory___init__, Inventory_equip, Inventory_use, Inventory_attack_move, Inventory___init__, Inventory_attack_move, Inventory_attack_move, Inventory_attack_move, Inventory_attack_move, Inventory___init__, Inventory_equip, Inventory_use, Inventory___init__, Inventory_use, Inventory_from_ability, Inventory___init__, Inventory_add_item, Inventory_drop_item, Inventory_view, Inventory___iter__, Inventory___contains__
+
+=== DocStrings ===
+Item:
+class Item: DocString not found.
+
+Weapon:
+class Weapon: DocString not found.
+
+SingleHandedWeapon:
+class SingleHandedWeapon: DocString not found.
+
+DoubleHandedWeapon:
+class DoubleHandedWeapon: DocString not found.
+
+Pike:
+class Pike: DocString not found.
+
+RangedWeapon:
+class RangedWeapon: DocString not found.
+
+Shield:
+class Shield: DocString not found.
+
+Potion:
+class Potion: DocString not found.
+
+Inventory:
+class Inventory: DocString not found.
+
+__init__:
+function __init__: DocString not found.
+
+pick_up:
+function pick_up: DocString not found.
+
+throw_away:
+function throw_away: DocString not found.
+
+use:
+function use: DocString not found.
+
+__str__:
+function __str__: DocString not found.
+
+equip:
+function equip: DocString not found.
+
+attack_move:
+function attack_move: DocString not found.
+
+from_ability:
+function from_ability: DocString not found.
+
+add_item:
+function add_item: DocString not found.
+
+drop_item:
+function drop_item: DocString not found.
+
+view:
+function view: DocString not found.
+
+__iter__:
+function __iter__: DocString not found.
+
+__contains__:
+function __contains__: DocString not found.
+
+
+=== Type Annotations ===
+Functions/methods without type annotations: __init__, throw_away, use, __str__, __init__, equip, use, attack_move, __init__, attack_move, attack_move, attack_move, attack_move, __init__, equip, use, __init__, use, from_ability, __init__, view, __iter__, __contains__
+
+=== Naming Conventions ===
+All names adhere to the specified naming conventions.
