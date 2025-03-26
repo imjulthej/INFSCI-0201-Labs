@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>NASA APOD - Home</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 20px; }
+        img { max-width: 100%; height: auto; margin-top: 20px; }
+        a { display: block; margin-top: 20px; font-size: 18px; }
+    </style>
+</head>
+<body>
+    <h1>NASA Astronomy Picture of the Day</h1>
+    <h3>{{ apod.date }}</h3>
+    <p><strong>{{ apod.title }}</strong></p>
+    
+    {% if apod.media_type == "image" %}
+        <img src="{{ apod.url }}" alt="APOD Image">
+    {% else %}
+        <p>Video: <a href="{{ apod.url }}" target="_blank">Watch here</a></p>
+    {% endif %}
+
+    <p>{{ apod.explanation }}</p>
+    
+    {% if apod.copyright %}
+        <p><em>Copyright: {{ apod.copyright }}</em></p>
+    {% endif %}
+
+    <a href="{{ url_for('history') }}">View Past APODs</a>
+</body>
+</html>

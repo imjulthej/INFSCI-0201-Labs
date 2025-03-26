@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>NASA APOD - History</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 20px; }
+        img { max-width: 100%; height: auto; margin-top: 20px; }
+        a { display: block; margin-top: 20px; font-size: 18px; }
+    </style>
+</head>
+<body>
+    <h1>Search for a Past Astronomy Picture</h1>
+    
+    <form method="POST">
+        <label for="date">Select a Date:</label>
+        <input type="date" id="date" name="date" required>
+        <button type="submit">Fetch APOD</button>
+    </form>
+
+    {% if error %}
+        <p style="color: red;"><strong>{{ error }}</strong></p>
+    {% endif %}
+
+    {% if apod %}
+        <h3>{{ apod.date }}</h3>
+        <p><strong>{{ apod.title }}</strong></p>
+        
+        {% if apod.media_type == "image" %}
+            <img src="{{ apod.url }}" alt="APOD Image">
+        {% else %}
+            <p>Video: <a href="{{ apod.url }}" target="_blank">Watch here</a></p>
+        {% endif %}
+
+        <p>{{ apod.explanation }}</p>
+        
+        {% if apod.copyright %}
+            <p><em>Copyright: {{ apod.copyright }}</em></p>
+        {% endif %}
+    {% endif %}
+
+    <a href="{{ url_for('home') }}">Back to Today’s APOD</a>
+</body>
+</html>
