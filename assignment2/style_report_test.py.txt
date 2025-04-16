@@ -1,0 +1,15 @@
+=== File Structure ===
+Total lines of code: 31
+Imported packages: os, Flask, render_template, request, segno
+Classes: 
+Functions: index
+
+=== DocStrings ===
+index:
+function index: DocString not found.
+
+=== Type Annotations ===
+Functions/methods without type annotations: index
+
+=== Naming Conventions ===
+All names adhere to the specified naming conventions.
